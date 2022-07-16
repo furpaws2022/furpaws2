@@ -12,7 +12,7 @@ export const Account = () => {
         // api call
         // if (res.status == 200){
             console.log("cliecked logout")
-            localStorage.setItem("IS_AUTH",false)
+          
             history.push('/')
         // }
        
