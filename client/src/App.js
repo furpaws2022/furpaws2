@@ -14,6 +14,7 @@ import Contact from './components/Contact';
 import Login from './components/login/login';
 import Register from './components/register/register';
 import Checkout from './components/Checkout';
+import { Account } from './components/Account';
 
 
 function App() {
@@ -23,10 +24,11 @@ function App() {
     <Router>
       <Provider store={store}>
       
-     <Nav/>
+    <Nav/>
      <Route path="/" exact>
       <Home/>
      </Route>
+  
      <Route path="/cart" exact component={Cart}/>
      <Route path="/about" exact component={About}/>
      <Route path="/contact" exact component={Contact}/>
@@ -34,7 +36,7 @@ function App() {
      <Route path="/login" exact><Login/>
       </Route>
      <Route path="/register" exact component={Register}/>
-     <Route path="/account" exact component={About}/>
+     <Route path="/account" exact component={Account}/>
      <Route path="/checkout" exact component={Checkout}/>
      <Footer/>
      {/* <Googlepay/> */}

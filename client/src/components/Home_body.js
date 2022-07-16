@@ -51,7 +51,9 @@ const Home_body = () => {
           slidesToShow: 1,
           slidesToScroll: 1
         }
-      }
+      },
+      
+   
     ]
   };
 

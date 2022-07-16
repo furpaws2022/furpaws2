@@ -39,6 +39,8 @@ const Login = () => {
   const [loginPassword, setLoginPassword] = useState("");
 
   const login = () => {
+   
+
     Axios({
         method: "POST",
         data: {
@@ -49,7 +51,11 @@ const Login = () => {
         url: "http://localhost:4000/login",
       }).then((res) =>{
         console.log(res);
-        history.push("/");
+          history.go("/");                                  
+       
+         
+        
+       
     });
     }
 

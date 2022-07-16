@@ -12,11 +12,12 @@ const Home = () => {
 
     return (
         <div>
+          
             <Header />
             <div className="container ">
-                <div className="row">
+                <div className="row header_margin">
 
-                <h3  style={{marginTop:'40px',textAlign:'center'}} className="text-1xl font-bold underline">
+                <h3  style={{marginTop:'120px',textAlign:'center'}} className="text-1xl font-bold underline">
             Latest Products
     </h3>
                     {products.map(product => (
